@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: lato, sans-serif;
+	font-weight: lighter;
+}
+
+section {
+	width: 100%;
+	height: 500px;
+	background-color: #8e44ad;
+	text-align: center;
+	padding: 80px 50px;
+}
+section:nth-child(2) {background-color: #3498db;}
+section:nth-child(3) {background-color: #2ecc71;}
+section:nth-child(4) {background-color: #e74c3c;}
+
+h2 {
+	color: #fff;
+	margin-top: 100px;
+
+}
+
+a.scrollToTop {
+	/*
+		Position it 50px from the right and 50% from the bottom.
+	*/
+	position: fixed;
+	bottom: 50%;
+	right: 50px;
+
+	color: #fff;
+	font-weight: bolder;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 6px;
+	
+	/*
+		You can also use a arrow like image to display instead of text,
+		by adding the following line of code.
+	*/
+	background: url('Icons/arrow.png') no-repeat 0px 20px;
+
+	/*
+		Hide it by default. 
+		Display it using jQuery once the user scrolls the page by 100px
+	*/
+	display: none;
+}
